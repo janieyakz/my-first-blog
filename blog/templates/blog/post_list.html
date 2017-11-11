@@ -3,13 +3,16 @@
 <head>
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href="//fontss.googleapis.com/css?family=lobsster&subset=latin,latin-ext" rel="sytlesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=lobster&subset=latin,latin-ext" rel="sytlesheet" type="text/css">
 </head>
-<div>
+<div class="page-header">
+
 <h1>
-<a href="/">Django Girls Blog</a></h1>
+<a href="/">Django Girls Blog</a>
+</h1>
+</div>
 {% for post in posts %}
-<div>
+<div class="post">
 <p>published: {{ post.published_date }}</p>
 <h1><a href="">{{ post.title }}</a><h1>
 <p>{{ post.text |linebreaksbr }}</p>
